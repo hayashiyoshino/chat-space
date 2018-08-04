@@ -4,7 +4,7 @@ By Hayashi
 
 Chat-space is an instant messaging and collaboration system.
 
-* database design
+##database design
 
 ## members table
 
