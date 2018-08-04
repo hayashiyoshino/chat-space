@@ -1,4 +1,4 @@
-# chat-space
+<!-- # chat-space
 
 By Hayashi
 
@@ -55,3 +55,4 @@ Chat-space is an instant messaging and collaboration system.
 - belongs_to :group
 
 
+ -->
