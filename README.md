@@ -8,8 +8,8 @@ Chat-space is an instant messaging and collaboration system.
 
 ## members table
 
-|Column   |Type   |Options                       |
-|---------|-------|------------------------------|
+|Column   |Type     |Options                       |
+|---------|---------|------------------------------|
 |user_id  |reference|null: false, foreign_key: true|
 |group_id |reference|null: false, foreign_key: true|
 
@@ -43,10 +43,10 @@ Chat-space is an instant messaging and collaboration system.
 
 ## messages table
 
-|Column   |Type   |Option                        |
-|---------|-------|------------------------------|
-|body     |text   |null: false                   |
-|image    |string |                              |
+|Column   |Type     |Option                        |
+|---------|---------|------------------------------|
+|body     |text     |null: false                   |
+|image    |string   |                              |
 |group_id |reference|null: false, foreign_key: true|
 |user_id  |reference|null: false, foreign_key: true|
 
