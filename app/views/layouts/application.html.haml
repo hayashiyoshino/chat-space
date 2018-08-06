@@ -8,9 +8,21 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
   %div{class: "layout-notification"}
-  %div{class: "chat"}
-%div{class: "chat-side"}
-%div{class: "chat-user clearfix"}
+    チャットグループが作成されました
+    %div{class: "chat"}
+      %div{class: "chat-side"}
+      %div{class: "chat-user clearfix"}
+      %h5 hayashi
+      %div{class: "chat-user__actions"}
+        %small グループ作成
+        %small プロフィール編集
+      %ul{class: "chat-groups"}
+        %li{class: "chat-group"}
+        %small リンク
+      %p{class: "chat-group__name"}
+        hayashi
+      %p{class: "chat-group__message"}
+        まだメッセージはありません。
 
 
   = yield
