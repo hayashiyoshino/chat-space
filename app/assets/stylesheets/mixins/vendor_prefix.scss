@@ -1,0 +1,7 @@
+$prefixes: -webkit-, -moz-, -o-, '';
+
+@mixin flexbox {
+  @each $prefix in $prefixes {
+    display: #{$prefix}flex;
+  }
+}
