@@ -40,7 +40,7 @@
     }
   }
 
-  .chat-group-form__field--left {
+  .chat-group-form__field {
     margin-top: 30px;
     &:after {
       content: "";
@@ -61,6 +61,13 @@
       width: 70%;
     }
 
+    .chat-group-form__label {
+      display: block;
+      line-height: 50px;
+      font-weight: bold;
+      text-align: right;
+    }
+
     .chat-group-form__input {
       float: left;
       width: 100%;
@@ -76,7 +83,7 @@
     font-size: 14px;
     border-bottom: 1px solid #ddd;
     &:after {
-      content; "";
+      content: "";
       clear: both;
       display: block;
     }
@@ -99,6 +106,7 @@
       }
     }
   }
+
   .chat-group-form__action-btn {
     display: inline-block;
     padding: 12px 20px;
