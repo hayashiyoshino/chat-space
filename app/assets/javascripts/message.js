@@ -42,6 +42,7 @@ $(function() {
       var html = buildHTML(data);
       $('.messages').append(html);
       $('.form__message').val('');
+      $("#button").prop('disabled', false);
     })
     .fail(function(){
       alert('error')
