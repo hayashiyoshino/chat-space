@@ -47,5 +47,54 @@ $(function() {
     .fail(function(){
       alert('error')
     })
+    return false;
   })
+
+  if (window.location.href.match(/\/groups\/\d+\/messages/)) {
+    var countup = function(){
+      var countup = function(){
+        var lastMessageId = $('.message').last().data('message-id');
+        $.ajax({
+          type: 'GET',
+          url: location.href,
+          dataType: 'json',
+          data: {lastMessageId: lastMessageId},
+        })
+        .done(function(new_messages){
+          var insertHTML = '';
+          new_messages.forEach(function(message){
+            insertHTML += buildHTML(message);
+            $(".messages").append(insertHTML);
+          });
+        })
+        .fail(function(){
+          alert("自動メッセージ取得に失敗しました")
+        })
+      }
+      setInterval(countup, 5000);
+    }
+  }
+
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
