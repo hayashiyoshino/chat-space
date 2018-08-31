@@ -1,17 +1,17 @@
-<!-- # chat-space
+# chat-space
 
 By Hayashi
 
 Chat-space is an instant messaging and collaboration system.
 
-* database design
+## database design
 
 ## members table
 
-|Column   |Type   |Options                       |
-|---------|-------|------------------------------|
-|user_id  |integer|null: false, foreign_key: true|
-|group_id |integer|null: false, foreign_key: true|
+|Column   |Type     |Options                       |
+|---------|---------|------------------------------|
+|user_id  |reference|null: false, foreign_key: true|
+|group_id |reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
@@ -41,18 +41,18 @@ Chat-space is an instant messaging and collaboration system.
 - has_many :users, through: :members
 
 
-##messages table
+## messages table
 
-|Column   |Type   |Option                        |
-|---------|-------|------------------------------|
-|body     |text   |null: false                   |
-|image    |string |                              |
-|group_id |integer|null: false, foreign_key: true|
-|user_id  |integer|null: false, foreign_key: true|
+|Column   |Type     |Option                        |
+|---------|---------|------------------------------|
+|body     |text     |null: false                   |
+|image    |string   |                              |
+|group_id |reference|null: false, foreign_key: true|
+|user_id  |reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
 - belongs_to :group
 
 
- -->
+
